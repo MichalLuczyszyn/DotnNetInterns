@@ -1,0 +1,18 @@
+﻿version: '1.0'
+
+services:
+  database:
+    image: postgres:latest
+    container_name: Postgres-Playground
+    environment:
+       POSTGRES_USER: postgres
+       POSTGRES_PASSWORD: Password
+       POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    restart: no
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+  
