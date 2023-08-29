@@ -13,7 +13,7 @@ using Playground.Core.Roles;
 namespace Playground.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("users")]
 public class UsersController : ControllerBase
 {
     private readonly IMediator _mediator;
